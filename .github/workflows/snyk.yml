@@ -10,3 +10,5 @@ jobs:
         continue-on-error: true
         env:
           SNYK_TOKEN: 8753a7e3-436f-4033-b568-da76e27917c9
+        with:
+          command: monitor
