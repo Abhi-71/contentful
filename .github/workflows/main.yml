@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,4 +31,4 @@ jobs:
   # uses: trufflesecurity/TruffleHog-Enterprise-Github-Action@a99b0a3e0cc7cf8f8b2b1774462443b29bb2445c
         uses: trufflesecurity/TruffleHog-Enterprise-Github-Action@v1.0.0
         with:
-          args: --json main dev
+          args: --json master dev
